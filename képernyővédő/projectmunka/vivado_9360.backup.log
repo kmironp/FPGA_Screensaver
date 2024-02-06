@@ -1,0 +1,169 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Nov 21 16:38:45 2022
+# Process ID: 9360
+# Current directory: C:/Users/hallgato/KMP/projectmunka
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7532 C:\Users\hallgato\KMP\projectmunka\projectmunka.xpr
+# Log file: C:/Users/hallgato/KMP/projectmunka/vivado.log
+# Journal file: C:/Users/hallgato/KMP/projectmunka\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/hallgato/KMP/projectmunka/projectmunka.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Programok/Xilinx/Vivado/2020.1/data/ip'.
+update_compile_order -fileset sources_1
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk_65mhz -dir c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {clk_65mhz} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {65.000} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {50.375} CONFIG.MMCM_CLKOUT0_DIVIDE_F {15.500} CONFIG.CLKOUT1_JITTER {254.866} CONFIG.CLKOUT1_PHASE_ERROR {297.890}] [get_ips clk_65mhz]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'clk_65mhz' to 'clk_65mhz' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/clk_65mhz/clk_65mhz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_65mhz'...
+generate_target all [get_files  c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/clk_65mhz/clk_65mhz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_65mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_65mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_65mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_65mhz'...
+catch { config_ip_cache -export [get_ips -all clk_65mhz] }
+export_ip_user_files -of_objects [get_files c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/clk_65mhz/clk_65mhz.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/clk_65mhz/clk_65mhz.xci]
+launch_runs clk_65mhz_synth_1 -jobs 2
+[Mon Nov 21 16:57:30 2022] Launched clk_65mhz_synth_1...
+Run output will be captured here: C:/Users/hallgato/KMP/projectmunka/projectmunka.runs/clk_65mhz_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/clk_65mhz/clk_65mhz.xci] -directory C:/Users/hallgato/KMP/projectmunka/projectmunka.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/hallgato/KMP/projectmunka/projectmunka.ip_user_files -ipstatic_source_dir C:/Users/hallgato/KMP/projectmunka/projectmunka.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/hallgato/KMP/projectmunka/projectmunka.cache/compile_simlib/modelsim} {questa=C:/Users/hallgato/KMP/projectmunka/projectmunka.cache/compile_simlib/questa} {riviera=C:/Users/hallgato/KMP/projectmunka/projectmunka.cache/compile_simlib/riviera} {activehdl=C:/Users/hallgato/KMP/projectmunka/projectmunka.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk_40mhz -dir c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {clk_40mhz} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {40.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {25.000} CONFIG.CLKOUT1_JITTER {159.371}] [get_ips clk_40mhz]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'clk_40mhz' to 'clk_40mhz' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/clk_40mhz/clk_40mhz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_40mhz'...
+generate_target all [get_files  c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/clk_40mhz/clk_40mhz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_40mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_40mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_40mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_40mhz'...
+catch { config_ip_cache -export [get_ips -all clk_40mhz] }
+export_ip_user_files -of_objects [get_files c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/clk_40mhz/clk_40mhz.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/clk_40mhz/clk_40mhz.xci]
+launch_runs clk_40mhz_synth_1 -jobs 2
+[Mon Nov 21 16:57:59 2022] Launched clk_40mhz_synth_1...
+Run output will be captured here: C:/Users/hallgato/KMP/projectmunka/projectmunka.runs/clk_40mhz_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/clk_40mhz/clk_40mhz.xci] -directory C:/Users/hallgato/KMP/projectmunka/projectmunka.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/hallgato/KMP/projectmunka/projectmunka.ip_user_files -ipstatic_source_dir C:/Users/hallgato/KMP/projectmunka/projectmunka.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/hallgato/KMP/projectmunka/projectmunka.cache/compile_simlib/modelsim} {questa=C:/Users/hallgato/KMP/projectmunka/projectmunka.cache/compile_simlib/questa} {riviera=C:/Users/hallgato/KMP/projectmunka/projectmunka.cache/compile_simlib/riviera} {activehdl=C:/Users/hallgato/KMP/projectmunka/projectmunka.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name loons_1024x768 -dir c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {loons_1024x768} CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {12} CONFIG.Write_Depth_A {38400} CONFIG.Read_Width_A {12} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {12} CONFIG.Read_Width_B {12} CONFIG.Port_A_Write_Rate {0}] [get_ips loons_1024x768]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'loons_1024x768' to 'loons_1024x768' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/loons_1024x768/loons_1024x768.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'loons_1024x768'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/loons_1024x768/loons_1024x768.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'loons_1024x768'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'loons_1024x768'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'loons_1024x768'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'loons_1024x768'...
+catch { config_ip_cache -export [get_ips -all loons_1024x768] }
+export_ip_user_files -of_objects [get_files c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/loons_1024x768/loons_1024x768.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/loons_1024x768/loons_1024x768.xci]
+launch_runs loons_1024x768_synth_1 -jobs 2
+[Mon Nov 21 17:02:38 2022] Launched loons_1024x768_synth_1...
+Run output will be captured here: C:/Users/hallgato/KMP/projectmunka/projectmunka.runs/loons_1024x768_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/loons_1024x768/loons_1024x768.xci] -directory C:/Users/hallgato/KMP/projectmunka/projectmunka.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/hallgato/KMP/projectmunka/projectmunka.ip_user_files -ipstatic_source_dir C:/Users/hallgato/KMP/projectmunka/projectmunka.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/hallgato/KMP/projectmunka/projectmunka.cache/compile_simlib/modelsim} {questa=C:/Users/hallgato/KMP/projectmunka/projectmunka.cache/compile_simlib/questa} {riviera=C:/Users/hallgato/KMP/projectmunka/projectmunka.cache/compile_simlib/riviera} {activehdl=C:/Users/hallgato/KMP/projectmunka/projectmunka.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/hallgato/KMP/loons240x160.coe' provided. It will be converted relative to IP Instance files '../../../../../loons240x160.coe'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name loons_1024x768_jo -dir c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {loons_1024x768_jo} CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {12} CONFIG.Write_Depth_A {38400} CONFIG.Read_Width_A {12} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {12} CONFIG.Read_Width_B {12} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/hallgato/KMP/loons240x160.coe} CONFIG.Port_A_Write_Rate {0}] [get_ips loons_1024x768_jo]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'loons_1024x768_jo' to 'loons_1024x768_jo' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/hallgato/KMP/loons240x160.coe' provided. It will be converted relative to IP Instance files '../../../../../loons240x160.coe'
+generate_target {instantiation_template} [get_files c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/loons_1024x768_jo/loons_1024x768_jo.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'loons_1024x768_jo'...
+generate_target all [get_files  c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/loons_1024x768_jo/loons_1024x768_jo.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'loons_1024x768_jo'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'loons_1024x768_jo'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'loons_1024x768_jo'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'loons_1024x768_jo'...
+catch { config_ip_cache -export [get_ips -all loons_1024x768_jo] }
+export_ip_user_files -of_objects [get_files c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/loons_1024x768_jo/loons_1024x768_jo.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/loons_1024x768_jo/loons_1024x768_jo.xci]
+launch_runs loons_1024x768_jo_synth_1 -jobs 2
+[Mon Nov 21 17:05:05 2022] Launched loons_1024x768_jo_synth_1...
+Run output will be captured here: C:/Users/hallgato/KMP/projectmunka/projectmunka.runs/loons_1024x768_jo_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/loons_1024x768_jo/loons_1024x768_jo.xci] -directory C:/Users/hallgato/KMP/projectmunka/projectmunka.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/hallgato/KMP/projectmunka/projectmunka.ip_user_files -ipstatic_source_dir C:/Users/hallgato/KMP/projectmunka/projectmunka.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/hallgato/KMP/projectmunka/projectmunka.cache/compile_simlib/modelsim} {questa=C:/Users/hallgato/KMP/projectmunka/projectmunka.cache/compile_simlib/questa} {riviera=C:/Users/hallgato/KMP/projectmunka/projectmunka.cache/compile_simlib/riviera} {activehdl=C:/Users/hallgato/KMP/projectmunka/projectmunka.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/hallgato/KMP/fold.coe' provided. It will be converted relative to IP Instance files '../../../../../fold.coe'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name fold_1024x768 -dir c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {fold_1024x768} CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {12} CONFIG.Write_Depth_A {38400} CONFIG.Read_Width_A {12} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {12} CONFIG.Read_Width_B {12} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/hallgato/KMP/fold.coe} CONFIG.Port_A_Write_Rate {0}] [get_ips fold_1024x768]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'fold_1024x768' to 'fold_1024x768' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/hallgato/KMP/fold.coe' provided. It will be converted relative to IP Instance files '../../../../../fold.coe'
+generate_target {instantiation_template} [get_files c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/fold_1024x768/fold_1024x768.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fold_1024x768'...
+generate_target all [get_files  c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/fold_1024x768/fold_1024x768.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fold_1024x768'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fold_1024x768'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'fold_1024x768'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fold_1024x768'...
+catch { config_ip_cache -export [get_ips -all fold_1024x768] }
+export_ip_user_files -of_objects [get_files c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/fold_1024x768/fold_1024x768.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/fold_1024x768/fold_1024x768.xci]
+launch_runs fold_1024x768_synth_1 -jobs 2
+[Mon Nov 21 17:06:17 2022] Launched fold_1024x768_synth_1...
+Run output will be captured here: C:/Users/hallgato/KMP/projectmunka/projectmunka.runs/fold_1024x768_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/fold_1024x768/fold_1024x768.xci] -directory C:/Users/hallgato/KMP/projectmunka/projectmunka.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/hallgato/KMP/projectmunka/projectmunka.ip_user_files -ipstatic_source_dir C:/Users/hallgato/KMP/projectmunka/projectmunka.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/hallgato/KMP/projectmunka/projectmunka.cache/compile_simlib/modelsim} {questa=C:/Users/hallgato/KMP/projectmunka/projectmunka.cache/compile_simlib/questa} {riviera=C:/Users/hallgato/KMP/projectmunka/projectmunka.cache/compile_simlib/riviera} {activehdl=C:/Users/hallgato/KMP/projectmunka/projectmunka.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/hallgato/KMP/loons240x160.coe' provided. It will be converted relative to IP Instance files '../../../../../loons240x160.coe'
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/hallgato/KMP/loons240x160.coe' provided. It will be converted relative to IP Instance files '../../../../../loons240x160.coe'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name loons -dir c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {loons} CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {12} CONFIG.Write_Depth_A {38400} CONFIG.Read_Width_A {12} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {12} CONFIG.Read_Width_B {12} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/hallgato/KMP/loons240x160.coe} CONFIG.Port_A_Write_Rate {0}] [get_ips loons]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'loons' to 'loons' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/hallgato/KMP/loons240x160.coe' provided. It will be converted relative to IP Instance files '../../../../../loons240x160.coe'
+generate_target {instantiation_template} [get_files c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/loons/loons.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'loons'...
+generate_target all [get_files  c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/loons/loons.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'loons'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'loons'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'loons'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'loons'...
+catch { config_ip_cache -export [get_ips -all loons] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP loons, cache-ID = aa927ca29c32fcd2; cache size = 2.407 MB.
+export_ip_user_files -of_objects [get_files c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/loons/loons.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/loons/loons.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/loons/loons.xci'
+export_simulation -of_objects [get_files c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/loons/loons.xci] -directory C:/Users/hallgato/KMP/projectmunka/projectmunka.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/hallgato/KMP/projectmunka/projectmunka.ip_user_files -ipstatic_source_dir C:/Users/hallgato/KMP/projectmunka/projectmunka.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/hallgato/KMP/projectmunka/projectmunka.cache/compile_simlib/modelsim} {questa=C:/Users/hallgato/KMP/projectmunka/projectmunka.cache/compile_simlib/questa} {riviera=C:/Users/hallgato/KMP/projectmunka/projectmunka.cache/compile_simlib/riviera} {activehdl=C:/Users/hallgato/KMP/projectmunka/projectmunka.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/hallgato/KMP/fold.coe' provided. It will be converted relative to IP Instance files '../../../../../fold.coe'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name fold -dir c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {fold} CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {12} CONFIG.Write_Depth_A {38400} CONFIG.Read_Width_A {12} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {12} CONFIG.Read_Width_B {12} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/hallgato/KMP/fold.coe} CONFIG.Port_A_Write_Rate {0}] [get_ips fold]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'fold' to 'fold' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/hallgato/KMP/fold.coe' provided. It will be converted relative to IP Instance files '../../../../../fold.coe'
+generate_target {instantiation_template} [get_files c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/fold/fold.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fold'...
+generate_target all [get_files  c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/fold/fold.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fold'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fold'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'fold'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fold'...
+catch { config_ip_cache -export [get_ips -all fold] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP fold, cache-ID = c7adcff830ccbc04; cache size = 2.407 MB.
+export_ip_user_files -of_objects [get_files c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/fold/fold.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/fold/fold.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/fold/fold.xci'
+export_simulation -of_objects [get_files c:/Users/hallgato/KMP/projectmunka/projectmunka.srcs/sources_1/ip/fold/fold.xci] -directory C:/Users/hallgato/KMP/projectmunka/projectmunka.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/hallgato/KMP/projectmunka/projectmunka.ip_user_files -ipstatic_source_dir C:/Users/hallgato/KMP/projectmunka/projectmunka.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/hallgato/KMP/projectmunka/projectmunka.cache/compile_simlib/modelsim} {questa=C:/Users/hallgato/KMP/projectmunka/projectmunka.cache/compile_simlib/questa} {riviera=C:/Users/hallgato/KMP/projectmunka/projectmunka.cache/compile_simlib/riviera} {activehdl=C:/Users/hallgato/KMP/projectmunka/projectmunka.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 21 17:35:08 2022...
